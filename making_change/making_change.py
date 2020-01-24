@@ -3,7 +3,14 @@
 import sys
 
 def making_change(amount, denominations):
-  pass 
+  possibilities = 0
+  if amount < 0:
+    return 0
+  elif amount == 0 or amount == 1:
+    return 1
+  # else:
+  #   possibilities += 1
+  #   making_change(amount, denominations) 
 
 
 if __name__ == "__main__":

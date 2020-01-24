@@ -3,7 +3,17 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  if len(recipe) > len(ingredients):
+    return 0
+  else:
+    for k, v in recipe.items():
+      quotient = int(ingredients[k]) // int(recipe[k])
+      if int(ingredients[k]) < int(recipe[k]):
+        return 0
+      else:
+        if int(ingredients[k]) // int(recipe[k]) < quotient:
+          quotient = int(ingredients[k]) // int(recipe[k])
+    return quotient
 
 
 if __name__ == '__main__':

@@ -3,7 +3,25 @@
 import sys
 
 def rock_paper_scissors(n):
-  pass 
+  rock = 'rock'
+  paper = 'paper'
+  scissors = 'scissors'
+  arr_inner = [[rock],[paper],[scissors]]
+  if n == 0:
+    return [[]]
+  elif n == 1:
+    return arr_inner
+  else:
+    arr = []
+    for i in range(0, 3**n // 3):
+      arr.append([rock])
+      # arr.append(arr[i].)
+      print(arr[i][0].split().append(scissors))
+    for i in range(0, 3**n // 3):
+      arr.append([scissors])
+    for i in range(0, 3**n // 3):
+      arr.append([paper])
+    print(arr) 
 
 
 if __name__ == "__main__":
